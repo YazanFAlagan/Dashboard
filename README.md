@@ -16,8 +16,10 @@ This is a dynamic and interactive dashboard designed to visualize and analyze da
 ## 📸 Screenshots
 (Add your images in the appropriate sections)
 
-### 🔷 Dashboard Home
-![Dashboard Home](path/to/your/image.png)
+### 🔷 Dashboard Sidebar
+![Dashboard Sidebar Light Mode](snaps/sidebar.png)
+![Dashboard Sidebar Dark Mode](snaps/dark-mode-sidebar.png)
+
 
 ### 🔷 Charts & Graphs
 ![Charts](path/to/your/image.png)
