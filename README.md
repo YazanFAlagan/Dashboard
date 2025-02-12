@@ -4,14 +4,7 @@
 ![Dashboard Preview Dark Mode](snaps/dark-mode.png)
 
 ## 📌 Overview
-This is a dynamic and interactive dashboard designed to visualize and analyze data effectively. The project is built using modern web technologies to ensure a smooth and responsive user experience.
-
-## ✨ Features
-- **Interactive Charts** 📊: Displays real-time data insights.
-- **User Authentication** 🔐: Secure login and access control.
-- **Customizable Widgets** ⚙️: Personalize your dashboard layout.
-- **Responsive Design** 📱: Works on all screen sizes.
-- **Dark Mode Support** 🌙: Switch between light and dark themes.
+This is a dynamic and interactive dashboard designed to visualize and analyze data effectively. The project is built using HTML, CSS and JS to ensure a smooth and responsive user experience.
 
 ## 📸 Screenshots
 
@@ -38,10 +31,7 @@ This is a dynamic and interactive dashboard designed to visualize and analyze da
 
 
 ## 🛠️ Technologies Used
-- **Frontend:** HTML, CSS, JavaScript (React/Vue/Angular)
-- **Backend:** Node.js / Django / Flask (Specify the one you used)
-- **Database:** MySQL / PostgreSQL / Firebase
-- **Libraries:** Chart.js, Bootstrap, TailwindCSS, etc.
+- **Frontend:** HTML, CSS, JavaScript 
 
 ## 🚀 Installation & Setup
 1. Clone the repository:
@@ -62,11 +52,6 @@ This is a dynamic and interactive dashboard designed to visualize and analyze da
    ```
 5. Open your browser and visit `http://localhost:3000`
 
-## 📝 Usage
-- Login using your credentials.
-- Navigate through different sections.
-- Customize widgets and settings.
-- View analytics and data insights.
 
 ## 📢 Contributing
 Feel free to fork this repository and submit pull requests for improvements or bug fixes. Contributions are always welcome!
@@ -76,6 +61,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📧 Contact
 For any inquiries or suggestions, reach out to me:
-- **Email:** your-email@example.com
-- **LinkedIn:** [Your Profile](https://linkedin.com/in/yourprofile)
+- **Email:** yazanfalagan@gmail.com
+- **LinkedIn:** [Your Profile](https://www.linkedin.com/in/yazan-alagan)
 - **GitHub:** [YazanFAlagan](https://github.com/YazanFAlagan)
