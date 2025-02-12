@@ -1,7 +1,7 @@
 # Dashboard Project
 
 ![Dashboard Preview Light Mode](snaps/website.png)
-![Dashboard Preview Dark Mode](snaps/darkmode.png)
+![Dashboard Preview Dark Mode](snaps/dark-mode.png)
 
 ## 📌 Overview
 This is a dynamic and interactive dashboard designed to visualize and analyze data effectively. The project is built using modern web technologies to ensure a smooth and responsive user experience.
