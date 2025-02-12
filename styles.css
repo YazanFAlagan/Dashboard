@@ -153,6 +153,10 @@ aside .top {
     border-radius: 20px;
 }
 
+aside .top div.close span {
+    display: none;
+}
+
 aside .logo {
     display: flex;
     gap: 1rem;
@@ -629,7 +633,8 @@ body.dark-theme-variables .theme_toggler span.fa-sun {
         position: absolute;
         right: 0;
         margin-right: 30px;
-        font-size: 35px;
+        font-size: 20px;
+        cursor: pointer;
     }
 
     .right .top {
