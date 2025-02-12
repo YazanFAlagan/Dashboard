@@ -1,6 +1,6 @@
 # Dashboard Project
 
-![Dashboard Preview](path/to/your/image.png)
+![Dashboard Preview](snaps/website.png)
 
 ## 📌 Overview
 This is a dynamic and interactive dashboard designed to visualize and analyze data effectively. The project is built using modern web technologies to ensure a smooth and responsive user experience.
