@@ -26,13 +26,18 @@
 }
 
   /* dark theme */
+
 .dark-theme-variables {
     --clr-color-background: #181a1e;
     --clr-white: #202528;
     --clr-light: rgba(0, 0, 0, 0.4);
     --clr-dark: #edeffd;
     --clr-dark-variant: #677483;
-    --box-shadow: 0 2rem 3rem var(--clr-light)
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+}
+
+body.dark-theme-variables {
+    background-color: var(--clr-color-background);
 }
 
 * {
@@ -47,12 +52,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--clr-color-background); 
     width: 100vw;
     height: 100vh;
     font-size: 0.88rem;
     user-select: none;
-    overflow: auto; /* تعديل هذه الخاصية لتفعيل التمرير */
+    overflow: auto; 
 }
 
 .container {
@@ -92,7 +97,7 @@ small {
     font-size: 0.75rem;
 }
 
-.profile-photo {
+.profile-photo img {
     width: 2.8rem;
     height: 2.4rem;
     border-radius: 50%;
@@ -113,6 +118,12 @@ b {
 
 .primary {
     color: var(--clr-primary);
+    cursor: pointer; 
+    transition: transform 0.2s ease; 
+}
+
+.primary:hover {
+    transform: scale(1.1); 
 }
 
 .success {
@@ -139,15 +150,12 @@ aside .top {
     justify-content: space-around;
     align-items: center;
     margin-top: 1.4rem;
+    border-radius: 20px;
 }
 
 aside .logo {
     display: flex;
     gap: 1rem;
-}
-
-aside .top div.close {
-    display: none;
 }
 
 /* sidebar  */
@@ -159,6 +167,7 @@ aside .sidebar {
     height: 85vh;
     position: relative;
     top: 1rem;
+    border-radius: 20px;
 }
 
 aside .h3 {
@@ -237,6 +246,7 @@ main .date {
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
+    border-radius: 20px;
 }
 
 main .insights {
@@ -387,4 +397,293 @@ main .recent_order a {
     text-align: center;
     display: block;
     margin: 1rem;
+}
+
+/* start right side  */
+
+.right {
+    margin-top: 1.4rem;
+}
+
+.right h2 {
+    color: var(--clr-dark);
+}
+
+.right .top {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.right .top button {
+    display: none;
+}
+
+.right .theme_toggler {
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+    height: 1.6rem;
+    width: 4.9rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.right .theme_toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme_toggler span.fa-sun {
+    color: var(--clr-dark);
+}
+
+body.dark-theme-variables .theme_toggler span.fa-sun {
+    color: orange; 
+}
+
+.right .theme_toggler span.active {
+    background-color: var(--clr-primary);
+    color: white;
+}
+
+.right .top .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+}
+
+.right .info h3 {
+    color: var(--clr-dark);
+}
+
+.right .item h3 {
+    color: var(--clr-dark);
+}
+
+/* recent updates  */
+
+.right .recent_updates {
+    margin-top: 1rem;
+    margin-left: -20px;
+}
+
+.right .recent_updates .updates {
+    background-color: var(--clr-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+}
+
+.right .recent_updates .updates:hover {
+    box-shadow: none;
+}
+
+.right .recent_updates .update {
+    display: flex;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right .recent_updates h2 {
+    margin-left: 1rem; 
+    margin-top: -1rem; 
+    color: var(--clr-dark);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* sales analytics  */
+
+.right .sales_analytics {
+    margin-top: 2rem;
+}
+
+.right .sales_analytics .item {
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px 0;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+}
+
+.right .sales_analytics .item:hover {
+    box-shadow: none;
+}
+
+.right .sales_analytics .item .icon {
+    font-size: 1.2rem;
+    background: coral;
+    padding: 0.8rem;    
+    color: var(--clr-white);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.right .sales_analytics .item:nth-child(3) .icon {
+    background-color: var(--clr-success);
+}
+
+.right .sales_analytics .item:nth-child(4) .icon {
+    background-color: var(--clr-danger);
+}
+
+.right .sales_analytics h2 {
+    margin-left: 1rem; 
+    margin-top: -1rem; 
+    color: var(--clr-dark);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.add_products div {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed;
+    color: var(--clr-dark-variant);
+    margin: 1.5px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1200px) {
+
+        .container {
+            width: 94%;
+            grid-template-columns: 7rem auto 14rem;
+        }
+
+        aside .sidebar h3 {
+            display: none;
+        }
+
+        aside .sidebar a:last-child {
+            position: relative;
+            margin-top: 1.8rem;
+        }
+
+        main .insights {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+/* media query for phones  */
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        width: 100%;
+        grid-template-columns:  repeat(1,1fr);
+    }
+
+    aside {
+        position: fixed;
+        width: 18rem;
+        z-index: 3;
+        background: var(--clr-white);
+        display: none;
+        left: -100px;
+        animation: menuAni 1s forwards;
+    }
+
+    @keyframes menuAni {
+        to {
+            left: 0;
+        }
+    }
+
+    aside .logo h2 {
+        display: inline;
+    }
+
+    aside .sidebar h3 {
+        display: inline;
+    }
+
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .top div.close span {
+        display: inline;
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+        font-size: 35px;
+    }
+
+    .right .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.8rem;
+        background: var(--clr-white);
+        width: 100%;
+        height: 4.6rem;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--box-shadow);
+        margin: 0;
+    }
+
+    main .insights {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.6rem;
+        padding: 40px;
+    }
+
+    .main .recent_order {
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    .right .profile {
+        position: absolute;
+        left: 70%;
+    }
+
+    .right .recent_updates {
+        padding: 30px;
+    }
+
+    .right .sales_analytics {
+        padding: 30px;
+    }
+
+    .add_products {
+        padding: 30px;
+    }
+
+    .right .top button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--clr-dark);
+        position: absolute;
+        left: 1rem;
+        font-size: 1.5rem;
+    }
 }

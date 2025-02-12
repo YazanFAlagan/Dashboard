@@ -16,9 +16,9 @@
         <aside>
             <div class="top">
                 <div class="logo">
-                    <h2>Yazan<span class="danger">Zoz</span></h2>
+                    <h2>PPIS<span class="danger">Inventory</span></h2>
                 </div>
-                <div class="close">
+                <div class="close" id="close_btn">
                     <span class="fa-solid fa-xmark"></span>
                 </div>
             </div>
@@ -42,7 +42,7 @@
 
                 <a href="#">
                     <span class="fa-solid fa-envelope"></span>
-                    <h3>Messages</h3>
+                    <h3>Messages <span class="msg_count">14</span></h3>
                 </a>
 
                 <a href="#">
@@ -70,20 +70,17 @@
                     <h3>Log out</h3>
                 </a>
             </div>
-
         </aside>
-        <!-- side action end -->
+        <!-- side sction end -->
         
         <!-- main section start -->
         <main>
             <h1>Dashboard</h1>
-
             <div class="date">
                 <input type="date">
             </div>
-
-
             <div class="insights">
+
                 <!-- start selling 1 -->
                 <div class="sales">
                     <span class="fa-solid fa-arrow-trend-up"></span>
@@ -109,13 +106,13 @@
                     <div class="middle">
                         <div class="left">
                             <h3>Expenses</h3>
-                            <h1>$25.023</h1>
+                            <h1>$10.020</h1>
                         </div>
                         <div class="progress">
-                            <svg>
+                            <svg width="80" height="80">
                                 <circle r="30" cy="40" cx="40"></circle>
                             </svg>
-                            <div class="number">80%</div>
+                            <div class="number">30%</div>
                         </div>
                     </div>
                     <small>Last 24 Hours</small>
@@ -128,18 +125,19 @@
                     <div class="middle">
                         <div class="left">
                             <h3>Income</h3>
-                            <h1>$25.023</h1>
+                            <h1>$30.050</h1>
                         </div>
                         <div class="progress">
                             <svg>
                                 <circle r="30" cy="40" cx="40"></circle>
                             </svg>
-                            <div class="number">80%</div>
+                            <div class="number">100%</div>
                         </div>
                     </div>
                     <small>Last 24 Hours</small>
                 </div>
                 <!-- end selling 3 -->
+                
             </div>
             <!-- end inside  -->
             
@@ -151,7 +149,7 @@
                         <tr>
                             <th>Product Name</th>
                             <th>Product Number</th>
-                            <th>Payments</th> <!-- تعديل هذا السطر -->
+                            <th>Payments</th> 
                             <th>Status</th>
                         </tr>
                     </thead>
@@ -166,24 +164,24 @@
                         </tr>
 
                         <tr>
-                            <td>3.0 USB</td>
-                            <td>456</td>
+                            <td>HeadPhone</td>
+                            <td>262</td>
                             <td>Due</td>
                             <td class="warning">Pending</td>
                             <td class="primary">Details</td>
                         </tr>
 
                         <tr>
-                            <td>3.0 USB</td>
-                            <td>456</td>
+                            <td>Iphone 16</td>
+                            <td>106</td>
                             <td>Due</td>
                             <td class="warning">Pending</td>
                             <td class="primary">Details</td>
                         </tr>
 
                         <tr>
-                            <td>3.0 USB</td>
-                            <td>456</td>
+                            <td>Mac Air</td>
+                            <td>323</td>
                             <td>Due</td>
                             <td class="warning">Pending</td>
                             <td class="primary">Details</td>
@@ -193,15 +191,123 @@
                 </table>
             </div>
             <!-- end recent order  -->
-            
         </main>
         <!-- main section end -->
 
         <!-- right section start  -->
         <div class="right">
-            <h1>Right</h1>
+            <div class="top">
+                <button id="menu_bar">
+                    <span class="fa-solid fa-ellipsis-vertical"></span>
+                </button>
+                    <div class="theme_toggler">
+                        <span class="fa-regular fa-sun active"></span>
+                        <span class="fa-regular fa-moon"></span>
+                    </div>
+                    <div class="profile">
+                        <div class="info">
+                            <p><b>Yazan</b></p>
+                            <p>Admin</p>
+                            <small class="text-muted"></small>
+                        </div>
+                        <div class="profile-photo">
+                            <img src="photos/ad.jpg" alt="">
+                        </div>
+                    </div>
+                
+            </div>
+            <!-- end top  -->
+
+            <!-- start recent Updates  -->
+            <div class="recent_updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="photos/P1.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Yazan Faisal</b> Recived his order</p>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="photos/p2.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Yousef Mohamed</b> Recived his order</p>
+                        </div>
+                    </div>
+
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="photos/p3.jpg" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mahmoud Yousef</b> Recived his order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end recent updates   -->
+            
+            <!-- start sale analytics  -->
+            <div class="sales_analytics">
+                <h2>Sales Analytics</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="fa-solid fa-cart-shopping"></span>
+                    </div>
+                    <div class="right_text">
+                        <div class="info">
+                            <h3>Online Orders</h3>
+                            <small class="text-muted">Last seen 1 Hour</small>
+                        </div>
+                        <h5 class="danger">-5%</h5>
+                        <h3>450</h3>
+                    </div>
+                </div>
+
+                <div class="item online">
+                    <div class="icon">
+                        <span class="fa-solid fa-cart-shopping"></span>
+                    </div>
+                    <div class="right_text">
+                        <div class="info">
+                            <h3>Online Orders</h3>
+                            <small class="text-muted">Last seen 3 Hours</small>
+                        </div>
+                        <h5 class="danger">-16%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+
+                <div class="item online">
+                    <div class="icon">
+                        <span class="fa-solid fa-cart-shopping"></span>
+                    </div>
+                    <div class="right_text">
+                        <div class="info">
+                            <h3>Online Orders</h3>
+                            <small class="text-muted">Last seen 30 Min</small>
+                        </div>
+                        <h5 class="danger">-26%</h5>
+                        <h3>4649</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- end sale analytics  -->
+            
+            <div class="item add_products">
+                <div>
+                    <span class="fa-solid fa-plus"></span>
+                </div>
+            </div>
+
         </div>
         <!-- end right section -->
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
