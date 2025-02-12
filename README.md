@@ -1,7 +1,9 @@
 # Dashboard Project
 
+Open your browser and visit live `https://yazanfalagan.github.io/Dashboard/`
 ![Dashboard Preview Light Mode](snaps/website.png)
 ![Dashboard Preview Dark Mode](snaps/dark-mode.png)
+
 
 ## 📌 Overview
 This is a dynamic and interactive dashboard designed to visualize and analyze data effectively. The project is built using HTML, CSS and JS to ensure a smooth and responsive user experience.
@@ -50,7 +52,6 @@ This is a dynamic and interactive dashboard designed to visualize and analyze da
    ```bash
    npm start  # or yarn start
    ```
-5. Open your browser and visit `https://yazanfalagan.github.io/Dashboard/`
 
 
 ## 📢 Contributing
