@@ -62,5 +62,5 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📧 Contact
 For any inquiries or suggestions, reach out to me:
 - **Email:** yazanfalagan@gmail.com
-- **LinkedIn:** [Your Profile](https://www.linkedin.com/in/yazan-alagan)
+- **LinkedIn:** [Yazan Alagan]([https://www.linkedin.com/in/yazan-alagan](https://www.linkedin.com/in/yazan-alagan-981a63266/))
 - **GitHub:** [YazanFAlagan](https://github.com/YazanFAlagan)
