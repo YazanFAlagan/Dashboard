@@ -50,7 +50,7 @@ This is a dynamic and interactive dashboard designed to visualize and analyze da
    ```bash
    npm start  # or yarn start
    ```
-5. Open your browser and visit `http://localhost:3000`
+5. Open your browser and visit `https://yazanfalagan.github.io/Dashboard/`
 
 
 ## 📢 Contributing
