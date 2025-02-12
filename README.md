@@ -14,7 +14,6 @@ This is a dynamic and interactive dashboard designed to visualize and analyze da
 - **Dark Mode Support** 🌙: Switch between light and dark themes.
 
 ## 📸 Screenshots
-(Add your images in the appropriate sections)
 
 ### 🔷 Dashboard Sidebar
 ![Dashboard Sidebar Light Mode](snaps/sidebar.png)
@@ -22,10 +21,21 @@ This is a dynamic and interactive dashboard designed to visualize and analyze da
 
 
 ### 🔷 Charts & Graphs
-![Charts](path/to/your/image.png)
+![Charts Light Mode](snaps/dashboard.png)
+![Charts Dark Mode](snaps/dark-mode-dassboard.png)
 
-### 🔷 Settings Page
-![Settings](path/to/your/image.png)
+### 🔷 Recent Orders Section
+![Recent Orders Light Mode](snaps/recent-orders.png)
+![Recent Orders Dark Mode](snaps/dark-mode-recentorders.png)
+
+### 🔷 Small Size View
+![Small Size View](snaps/small-size.png)
+
+### 🔷 Mobile View 
+![Mobile View](snaps/mobile-size.png)
+![Sidebar in Mobile View](snaps/mobile-slidebar.png)
+
+
 
 ## 🛠️ Technologies Used
 - **Frontend:** HTML, CSS, JavaScript (React/Vue/Angular)
